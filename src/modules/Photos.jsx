@@ -30,12 +30,19 @@ function Intro() {
 }
 
 function PhotoWrapper({ children }) {
-  return <div className="rounded-md">{children}</div>;
+  return (
+    <div className="rounded-md flex justify-center items-center">
+      {children}
+    </div>
+  );
 }
 
 function Gallery({ children }) {
   return (
-    <section id="Photos" className="grid grid-cols-2 gap-5 m-5">
+    <section
+      id="Photos"
+      className="grid grid-cols-2 gap-5 m-5 justify-center items-center"
+    >
       <PhotoWrapper>
         <img src={photo1} alt="" className="rounded-md" />
       </PhotoWrapper>
