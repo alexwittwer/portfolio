@@ -42,7 +42,7 @@ function NavBar({ children }) {
   return (
     <div className="flex items-center">
       <nav>
-        <button className="burger-menu" onClick={updateMenu}>
+        <button className="burger-menu" onClick={updateMenu} aria-label="nav">
           <div className={burger_class}></div>
           <div className={burger_class}></div>
           <div className={burger_class}></div>
