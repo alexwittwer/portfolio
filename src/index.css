@@ -1,0 +1,186 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans&family=Raleway&family=Spinnaker&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  font-family: "Spinnaker", sans-serif;
+}
+
+body {
+  background-color: darkslategrey;
+}
+
+/* ---------------- Navbar and burger menu ------------------ */
+nav {
+  height: 2.5em;
+  padding: 0.5em;
+}
+
+.burger-menu {
+  height: 100%;
+  width: 2em;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  cursor: pointer;
+}
+
+.burger-bar {
+  width: 2em;
+  height: 0.25em;
+  background-color: rgb(248, 248, 248);
+  border-radius: 0.25em;
+}
+
+.menu {
+  display: flex;
+  position: relative;
+  left: 0;
+  flex-direction: column;
+  max-width: 150px;
+  transition: 250ms;
+}
+
+/* ------------- sliding menu ------------- */
+.hidden {
+  display: none;
+}
+
+.visible {
+  display: inherit;
+  animation: 1s fade-in;
+}
+
+/* ------------- animations ------------- */
+/* clicked */
+.burger-bar.clicked:nth-child(1) {
+  transform: rotate(45deg) translate(0.375em, 0.625em);
+  transition: ease-out 0.3s;
+}
+
+.burger-bar.clicked:nth-child(2) {
+  transform: scale(0.1);
+  transition: ease-out 0.3s;
+}
+
+.burger-bar.clicked:nth-child(3) {
+  transform: rotate(135deg) translate(-0.25em, 0.5em);
+  transition: ease-out 0.3s;
+}
+
+/* unclicked */
+.burger-bar.unclicked {
+  transform: rotate(0) translate(0);
+  transition: cubic-bezier(0.175, 0.885, 0.32, 1.275) 0.5s;
+}
+
+/* ------------- Others ------------- */
+#Tech img {
+  transition: 500ms;
+}
+
+#Tech img:hover {
+  transform: scale(1.4);
+}
+
+li {
+  padding: 0.2em;
+  transition: 250ms;
+}
+
+li:hover {
+  transform: scale(1.1);
+}
+
+.fade-in {
+  animation: 1s fade-in ease-in;
+}
+
+.slide-in-right {
+  animation: 0.7s slide-in-right ease-out;
+}
+
+.slide-in-left {
+  animation: 0.7s slide-in-left ease-out;
+}
+
+.card-text {
+  display: grid;
+  grid-template-columns: 4fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 4px;
+}
+
+.links {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  grid-row: 2/3;
+  gap: 6px;
+}
+
+.card-text h3 {
+  grid-row: 1/2;
+  grid-column: 1/2;
+}
+
+.card-text p {
+  grid-row: 2/4;
+  grid-column: 1/2;
+  max-width: 30ch;
+}
+
+.card-text a {
+  grid-column: 2/3;
+}
+
+.card {
+  margin: 16px;
+}
+
+.socials img {
+  transition: 250ms;
+}
+.socials img:hover {
+  transform: scale(1.2);
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slide-in-right {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(0%);
+  }
+}
+
+@keyframes slide-in-left {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0%);
+  }
+}
+
+@media screen and (min-width: 600px) {
+  .portfolio {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .portfolio img {
+    width: 900px;
+  }
+}
