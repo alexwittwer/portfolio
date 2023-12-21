@@ -7,7 +7,7 @@ import twotwoslides from "../assets/22slides.png";
 export default function Socials() {
   const { ref: socRef, inView: socInView } = useInView({
     threshold: 0,
-    rootMargin: "300px",
+    rootMargin: "100px",
   });
 
   return (
@@ -18,7 +18,7 @@ export default function Socials() {
           socInView ? "fade-in" : ""
         } h-screen flex flex-col justify-center text-center items-center text-slate-100 text-xl gap-5`}
       >
-        <h2>
+        <h2 ref={socRef} className={`${socInView ? "slide-in-top" : ""}`}>
           You can reach me or find more of my work at any of the following
           links.{" "}
         </h2>
@@ -36,7 +36,7 @@ export default function Socials() {
             <img src={twotwoslides} alt=" " width={"50px"} />
           </a>
         </div>
-        <h3>
+        <h3 ref={socRef} className={`${socInView ? "slide-in-bottom" : ""}`}>
           Or{" "}
           <a href="mailto: wittweral+portfolio@gmail.com" className="underline">
             just send me an email.

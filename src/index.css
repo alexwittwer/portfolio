@@ -99,17 +99,25 @@ li:hover {
 }
 
 .slide-in-right {
-  animation: 0.7s slide-in-right ease-out;
+  animation: 1s slide-in-right ease-out;
 }
 
 .slide-in-left {
-  animation: 0.7s slide-in-left ease-out;
+  animation: 1s slide-in-left ease-out;
+}
+
+.slide-in-bottom {
+  animation: 1.5s slide-in-bottom ease-out;
+}
+
+.slide-in-top {
+  animation: 1.5s slide-in-top ease-out;
 }
 
 .card-text {
   display: grid;
   grid-template-columns: 4fr 1fr;
-  grid-template-rows: 1fr 1fr;
+  grid-template-rows: auto-fill;
   gap: 4px;
 }
 
@@ -139,6 +147,11 @@ li:hover {
 
 .card {
   margin: 16px;
+  transition: 250ms;
+}
+
+.card:hover {
+  transform: scale(1.05);
 }
 
 .icon {
@@ -176,6 +189,24 @@ li:hover {
   }
   to {
     transform: translateX(0%);
+  }
+}
+
+@keyframes slide-in-bottom {
+  from {
+    transform: translateY(200%);
+  }
+  to {
+    transform: translateY(0%);
+  }
+}
+
+@keyframes slide-in-top {
+  from {
+    transform: translateY(-200%);
+  }
+  to {
+    transform: translateY(0%);
   }
 }
 

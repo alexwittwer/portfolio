@@ -3,7 +3,7 @@ import { useInView } from "react-intersection-observer";
 export default function Tech() {
   const { ref: techRef, inView: techInView } = useInView({
     threshold: 0,
-    rootMargin: "300px",
+    rootMargin: "600px",
   });
 
   return (
@@ -15,6 +15,7 @@ export default function Tech() {
         <h2 className="my-4">Here are some of the things I use: </h2>
         <div className=" w-fit relative">
           <div
+            ref={techRef}
             className={`flex relative justify-center bg-slate-100 p-5 my-5 rounded-md ${
               techInView ? "slide-in-right" : ""
             }`}
@@ -41,6 +42,7 @@ export default function Tech() {
             </div>
           </div>
           <div
+            ref={techRef}
             className={`flex relative justify-center bg-slate-100 p-5 my-5 rounded-md  ${
               techInView ? "slide-in-left" : ""
             }`}

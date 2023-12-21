@@ -15,6 +15,7 @@ function Intro() {
     threshold: 0,
     rootMargin: "150px",
   });
+
   return (
     <section
       ref={ref}
@@ -30,8 +31,18 @@ function Intro() {
 }
 
 function PhotoWrapper({ children }) {
+  const { ref, inView } = useInView({
+    threshold: 0,
+    rootMargin: "150px",
+  });
+
   return (
-    <div className="rounded-md flex justify-center items-center">
+    <div
+      ref={ref}
+      className={`rounded-md flex justify-center items-center ${
+        inView ? "fade-in" : ""
+      }`}
+    >
       {children}
     </div>
   );
