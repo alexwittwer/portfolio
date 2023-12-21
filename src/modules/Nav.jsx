@@ -64,6 +64,7 @@ export default function Nav() {
         <MenuItem itemName={"Tech"} />
         <MenuItem itemName={"Projects"} />
         <MenuItem itemName={"Photos"} />
+        <MenuItem itemName={"Contact"} />
       </ul>
     </NavBar>
   );
