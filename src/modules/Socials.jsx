@@ -51,7 +51,7 @@ export default function Socials() {
           <a href="https://www.instagram.com/_wittwer/">
             <img src={instagram} alt="" width={"50px"} />
           </a>
-          <a href="https://awittwer.22slides.com">
+          <a href="https://awittwer.22slides.com/photojournalism">
             <img src={twotwoslides} alt="" width={"50px"} />
           </a>
         </div>
