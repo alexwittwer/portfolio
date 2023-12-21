@@ -2,7 +2,6 @@ import { useInView } from "react-intersection-observer";
 import photo1 from "../assets/photo1.webp";
 import photo2 from "../assets/photo2.webp";
 import photo3 from "../assets/photo3.webp";
-import photo4 from "../assets/photo4.webp";
 import photo5 from "../assets/photo5.webp";
 import photo6 from "../assets/photo6.webp";
 import photo7 from "../assets/photo7.webp";
