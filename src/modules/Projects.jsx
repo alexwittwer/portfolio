@@ -46,11 +46,11 @@ function Card({ imageURL, title, desc, repo, live }) {
         <h3 className="text-base items-center">{title}</h3>
         <p className="text-slate-900">{desc}</p>{" "}
         <div className="links">
-          <a href={repo} className="">
-            <img src={github} alt="" width={"30px"} />
+          <a href={repo}>
+            <img src={github} alt=" " width={"30px"} />
           </a>
-          <a href={live} className="">
-            <img src={external} alt="" width={"30px"} />
+          <a href={live}>
+            <img src={external} alt=" " width={"30px"} />
           </a>
         </div>
       </div>
