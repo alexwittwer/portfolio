@@ -11,7 +11,7 @@ export default function Socials() {
   });
 
   return (
-    <section className="h-screen">
+    <section id = "Contact" className="h-screen">
       <div
         ref={socRef}
         className={` ${
