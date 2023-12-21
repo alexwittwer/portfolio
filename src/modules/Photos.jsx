@@ -39,7 +39,7 @@ function PhotoWrapper({ children }) {
   return (
     <div
       ref={ref}
-      className={`rounded-md flex justify-center items-center ${
+      className={`rounded-md flex justify-center items-center card ${
         inView ? "fade-in" : ""
       }`}
     >
@@ -121,6 +121,42 @@ function Gallery({ children }) {
         <img
           src={photo10}
           alt="a cross country runner splashes a mountain of mud during a race"
+          className="rounded-md"
+        />
+      </PhotoWrapper>
+      <PhotoWrapper>
+        <img
+          src={
+            "https://m1.22slides.com/awittwer/60abd60798878-6285.image?f=webp&sh=2&w=990&s=551add4657b311fb1d70e7b023914d7a"
+          }
+          alt="a young boy offers up a skittle while wearing a firefighter costume"
+          className="rounded-md"
+        />
+      </PhotoWrapper>
+      <PhotoWrapper>
+        <img
+          src={
+            "https://m1.22slides.com/awittwer/220205-fire-13-of-14-7248.jpg?f=webp&sh=2&w=1000&s=4c609f5af969b589c291c1f6732e585e"
+          }
+          alt="firefighters perform a sweep of a burned down house after fighting the fire for 3 hours"
+          className="rounded-md"
+        />
+      </PhotoWrapper>
+      <PhotoWrapper>
+        <img
+          src={
+            "https://m1.22slides.com/awittwer/2020-1113-15134000-2-5870.jpg?f=webp&sh=2&w=1000&s=4a5fa39c343fd584b44aafb52731b959"
+          }
+          alt="a figure walks over a puddle on the street"
+          className="rounded-md"
+        />
+      </PhotoWrapper>
+      <PhotoWrapper>
+        <img
+          src={
+            "https://m1.22slides.com/awittwer/dsc4046-1-e1574060892791-2-8868.jpg?f=webp&sh=2&w=1000&s=3de964c25516d2e6068931de1d718abd"
+          }
+          alt="a woman dances in the spotlight at a busy nightclub"
           className="rounded-md"
         />
       </PhotoWrapper>
