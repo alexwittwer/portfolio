@@ -41,7 +41,7 @@ function Gallery({ children }) {
   return (
     <section
       id="Photos"
-      className="grid grid-cols-2 gap-5 m-5 justify-center items-center"
+      className="grid grid-cols-1 gap-5 m-5 justify-center items-center"
     >
       <PhotoWrapper>
         <img src={photo1} alt="" className="rounded-md" />
