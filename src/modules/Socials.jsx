@@ -24,16 +24,16 @@ export default function Socials() {
         </h2>
         <div className="flex justify-center items-center gap-5 p-5 socials">
           <a href="https://www.linkedin.com/in/alex-wittwer/">
-            <img src={linkedin} alt=" " width={"50px"} />
+            <img src={linkedin} alt="" width={"50px"} />
           </a>
           <a href="https://github.com/alexwittwer">
-            <img src={github} alt=" " width={"50px"} />
+            <img src={github} alt="" width={"50px"} />
           </a>
           <a href="https://www.instagram.com/_wittwer/">
-            <img src={instagram} alt=" " width={"50px"} />
+            <img src={instagram} alt="" width={"50px"} />
           </a>
           <a href="https://awittwer.22slides.com/photojournalism">
-            <img src={twotwoslides} alt=" " width={"50px"} />
+            <img src={twotwoslides} alt="" width={"50px"} />
           </a>
         </div>
         <h3 ref={socRef} className={`${socInView ? "slide-in-bottom" : ""}`}>
