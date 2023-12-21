@@ -19,8 +19,8 @@ export default function Tech() {
               techInView ? "slide-in-right" : ""
             }`}
           >
-            <h3 className="text-center text-slate-900">
-              Languages
+            <div className="text-center text-slate-900">
+              <h3>Languages</h3>
               <div className={`flex flex-wrap justify-center gap-5`}>
                 <img
                   src="https://user-images.githubusercontent.com/25181517/192158954-f88b5814-d510-4564-b285-dff7d6400dad.png"
@@ -38,15 +38,15 @@ export default function Tech() {
                   width="50px"
                 />
               </div>
-            </h3>
+            </div>
           </div>
           <div
             className={`flex relative justify-center bg-slate-100 p-5 my-5 rounded-md  ${
               techInView ? "slide-in-left" : ""
             }`}
           >
-            <h3 className="text-center text-slate-900">
-              Frameworks
+            <div className="text-center text-slate-900">
+              <h3>Frameworks</h3>
               <div className={`flex flex-wrap justify-center gap-5`}>
                 <img
                   src="https://user-images.githubusercontent.com/25181517/183897015-94a058a6-b86e-4e42-a37f-bf92061753e5.png"
@@ -59,7 +59,7 @@ export default function Tech() {
                   width="50px"
                 />
               </div>
-            </h3>
+            </div>
           </div>
           <div
             ref={techRef}
@@ -67,8 +67,8 @@ export default function Tech() {
               techInView ? "slide-in-right" : ""
             }`}
           >
-            <h3 className="text-center text-slate-900">
-              Tools
+            <div className="text-center text-slate-900">
+              <h3>Tools</h3>
               <div className={`flex flex-wrap justify-center gap-5`}>
                 <img
                   src="https://user-images.githubusercontent.com/25181517/192108372-f71d70ac-7ae6-4c0d-8395-51d8870c2ef0.png"
@@ -86,7 +86,7 @@ export default function Tech() {
                   width="50px"
                 />
               </div>
-            </h3>
+            </div>
           </div>
         </div>
       </section>

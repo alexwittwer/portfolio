@@ -176,11 +176,25 @@ li:hover {
 
 @media screen and (min-width: 600px) {
   .portfolio {
+    margin-inline: 10%;
     display: grid;
     grid-template-columns: 1fr 1fr;
   }
 
   .portfolio img {
-    width: 900px;
+    width: 1000px;
+  }
+
+  #Photos {
+    margin-inline: 10%;
+  }
+
+  #Tech img {
+    width: 100px;
+  }
+
+  #Tech h3 {
+    font-size: 1.4rem;
+    margin-bottom: 10%;
   }
 }
