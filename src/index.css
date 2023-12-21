@@ -115,6 +115,7 @@ li:hover {
 
 .links {
   display: flex;
+  flex-grow: 0;
   justify-content: flex-end;
   align-items: flex-end;
   grid-row: 2/3;
@@ -138,6 +139,10 @@ li:hover {
 
 .card {
   margin: 16px;
+}
+
+.icon {
+  max-width: 30px;
 }
 
 .socials img {

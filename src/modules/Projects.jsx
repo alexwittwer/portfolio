@@ -37,20 +37,25 @@ function Card({ imageURL, title, desc, repo, live }) {
   return (
     <div
       ref={projRef}
-      className={`card bg-slate-100 rounded-md my-2 flex flex-col items-center justify-center ${
+      className={`card bg-slate-100 rounded-md my-2 items-center justify-center ${
         projInView ? "fade-in" : ""
       }`}
     >
-      <img src={imageURL} alt={desc} className="object-cover" width={"500px"} />
+      <img
+        src={imageURL}
+        alt={desc}
+        className="object-cover portfolio-image"
+        width={"500px"}
+      />
       <div className="card-text text-xs p-2">
         <h3 className="text-base items-center">{title}</h3>
         <p className="text-slate-900">{desc}</p>{" "}
         <div className="links">
           <a href={repo}>
-            <img src={github} alt=" " width={"30px"} />
+            <img className="icon" src={github} alt=" " width={"20px"} />
           </a>
           <a href={live}>
-            <img src={external} alt=" " width={"30px"} />
+            <img className="icon" src={external} alt=" " width={"20px"} />
           </a>
         </div>
       </div>
@@ -65,7 +70,7 @@ function Portfolio() {
         imageURL={simplecalc}
         title={"simpleCalc"}
         desc={
-          "A vintage style calculator app, using JavaScript, CSS, HTML as part of The Odin Project curriculum"
+          "A vintage style calculator app, using JavaScript, CSS, HTML as part of The Odin Project"
         }
         live={"https://alexwittwer.github.io/simpleCalc/"}
         repo={"https://github.com/alexwittwer/simpleCalc/"}
@@ -92,7 +97,7 @@ function Portfolio() {
         imageURL={hardena}
         title={"Hardena Restaurant"}
         desc={
-          "A remake of local restaurant Hardena in Philadelphia, as part of The Odin Project curriculum"
+          "A remake of local restaurant Hardena in Philadelphia, as part of The Odin Project"
         }
         live={"https://alexwittwer.github.io/Hardena-Restaurant/"}
         repo={"https://github.com/alexwittwer/Hardena-Restaurant/"}
