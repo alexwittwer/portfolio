@@ -12,10 +12,7 @@ function Title() {
     rootMargin: "300px",
   });
   return (
-    <section
-      id="Projects"
-      className="flex flex-col justify-center items-center h-screen"
-    >
+    <section className="flex flex-col justify-center items-center h-screen">
       <p
         ref={projRef}
         className={`text-slate-100 text-lg text-center ${
@@ -65,7 +62,10 @@ function Card({ imageURL, title, desc, repo, live }) {
 
 function Portfolio() {
   return (
-    <section className="portfolio flex flex-col text-slate-900 gap-2 items-center my-10">
+    <section
+      id="Projects"
+      className="portfolio flex flex-col text-slate-900 gap-2 items-center my-10"
+    >
       <Card
         imageURL={simplecalc}
         title={"simpleCalc"}
