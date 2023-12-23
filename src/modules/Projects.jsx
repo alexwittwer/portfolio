@@ -5,6 +5,10 @@ import battleship from "../assets/battleship.png";
 import hardena from "../assets/hardena.png";
 import github from "../assets/github.svg";
 import external from "../assets/external.svg";
+import tictactoe from "../assets/tictactoe.png";
+import booknerd from "../assets/booknerd.png";
+import todo from "../assets/todo.png";
+import dashboard from "../assets/dashboard.png";
 
 function Title() {
   const { ref: projRef, inView: projInView } = useInView({
@@ -66,42 +70,124 @@ function Portfolio() {
       id="Projects"
       className="portfolio flex flex-col text-slate-900 gap-2 items-center my-10"
     >
-      <Card
-        imageURL={simplecalc}
-        title={"simpleCalc"}
-        desc={
-          "A vintage style calculator app, using JavaScript, CSS, HTML as part of The Odin Project"
-        }
-        live={"https://alexwittwer.github.io/simpleCalc/"}
-        repo={"https://github.com/alexwittwer/simpleCalc/"}
-      />
-      <Card
-        imageURL={weatherify}
-        title={"Weatherify"}
-        desc={
-          "A dynamic weather app using an free weather API, as part of The Odin Project curriculum"
-        }
-        live={"https://alexwittwer.github.io/weather-app/"}
-        repo={"https://github.com/alexwittwer/weather-app/"}
-      />
-      <Card
-        imageURL={battleship}
-        title={"Battleship"}
-        desc={
-          "A remake of the classic Hasbro game, Battleship, as part of The Odin Project curriculum"
-        }
-        live={"https://alexwittwer.github.io/battleship/"}
-        repo={"https://github.com/alexwittwer/battleship/"}
-      />
-      <Card
-        imageURL={hardena}
-        title={"Hardena Restaurant"}
-        desc={
-          "A remake of local restaurant Hardena in Philadelphia, as part of The Odin Project"
-        }
-        live={"https://alexwittwer.github.io/Hardena-Restaurant/"}
-        repo={"https://github.com/alexwittwer/Hardena-Restaurant/"}
-      />
+      <a
+        href="https://github.com/alexwittwer/simpleCalc/"
+        className="cursor-default"
+        target="blank"
+      >
+        <Card
+          imageURL={simplecalc}
+          title={"simpleCalc"}
+          desc={
+            "A vintage style calculator app, using JavaScript, CSS, HTML as part of The Odin Project"
+          }
+          live={"https://alexwittwer.github.io/simpleCalc/"}
+          repo={"https://github.com/alexwittwer/simpleCalc/"}
+        />
+      </a>
+      <a
+        href="https://github.com/alexwittwer/weather-app/"
+        className="cursor-default"
+        target="blank"
+      >
+        <Card
+          imageURL={weatherify}
+          title={"Weatherify"}
+          desc={
+            "A dynamic weather app using an free weather API, as part of The Odin Project curriculum"
+          }
+          live={"https://alexwittwer.github.io/weather-app/"}
+          repo={"https://github.com/alexwittwer/weather-app/"}
+        />
+      </a>
+      <a
+        href="https://github.com/alexwittwer/battleship/"
+        className="cursor-default"
+        target="blank"
+      >
+        <Card
+          imageURL={battleship}
+          title={"Battleship"}
+          desc={
+            "A remake of the classic Hasbro game, Battleship, as part of The Odin Project curriculum"
+          }
+          live={"https://alexwittwer.github.io/battleship/"}
+          repo={"https://github.com/alexwittwer/battleship/"}
+        />
+      </a>
+      <a
+        href="https://github.com/alexwittwer/Hardena-Restaurant"
+        className="cursor-default"
+        target="blank"
+      >
+        <Card
+          imageURL={hardena}
+          title={"Hardena Restaurant"}
+          desc={
+            "A remake of local restaurant Hardena in Philadelphia, as part of The Odin Project"
+          }
+          live={"https://alexwittwer.github.io/Hardena-Restaurant/"}
+          repo={"https://github.com/alexwittwer/Hardena-Restaurant/"}
+        />
+      </a>
+      <a
+        href="https://github.com/alexwittwer/admin-dashboard"
+        className="cursor-default"
+        target="blank"
+      >
+        <Card
+          imageURL={dashboard}
+          title={"Admin Dashboard"}
+          desc={
+            "CSS/HTML mockup of an admin dashboard, as part of The Odin Project"
+          }
+          live={"https://alexwittwer.github.io/admin-dashboard/"}
+          repo={"https://github.com/alexwittwer/admin-dashboard/"}
+        />
+      </a>
+      <a
+        href="https://github.com/alexwittwer/ToDoer"
+        className="cursor-default"
+        target="blank"
+      >
+        <Card
+          imageURL={todo}
+          title={"ToDoer"}
+          desc={
+            "Classic CS assignment, To Do list, as part of The Odin Project"
+          }
+          live={"https://alexwittwer.github.io/ToDoer/"}
+          repo={"https://github.com/alexwittwer/ToDoer/"}
+        />
+      </a>
+      <a
+        href="https://github.com/alexwittwer/naughts-and-crosses"
+        className="cursor-default"
+        target="blank"
+      >
+        <Card
+          imageURL={tictactoe}
+          title={"Naughts & Crosses"}
+          desc={
+            "Tic-Tac-Toe as an introduction to JavaScript, as part of The Odin Project"
+          }
+          live={"https://alexwittwer.github.io/naughts-and-crosses/"}
+          repo={"https://github.com/alexwittwer/naughts-and-crosses/"}
+        />
+      </a>
+      <a
+        href="https://github.com/alexwittwer/BookNerd"
+        className="cursor-default"
+        target="blank"
+      >
+        <Card
+          imageURL={booknerd}
+          title={"BookNerd"}
+          desc={"Library tracking app, as part of The Odin Project"}
+          live={"https://alexwittwer.github.io/BookNerd/"}
+          repo={"https://github.com/alexwittwer/BookNerd/"}
+        />
+      </a>
     </section>
   );
 }
