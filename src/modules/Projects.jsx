@@ -9,6 +9,7 @@ import tictactoe from "../assets/tictactoe.png";
 import booknerd from "../assets/booknerd.png";
 import todo from "../assets/todo.png";
 import dashboard from "../assets/dashboard.png";
+import cvbuilder from "../assets/cv-builder.png";
 
 function Title() {
   const { ref: projRef, inView: projInView } = useInView({
@@ -52,10 +53,10 @@ function Card({ imageURL, title, desc, repo, live }) {
         <h3 className="text-base items-center">{title}</h3>
         <p className="text-slate-900">{desc}</p>{" "}
         <div className="links">
-          <a href={repo}>
+          <a target="blank" href={repo}>
             <img className="icon" src={github} alt="" width={"20px"} />
           </a>
-          <a href={live}>
+          <a target="blank" href={live}>
             <img className="icon" src={external} alt="" width={"20px"} />
           </a>
         </div>
@@ -83,6 +84,21 @@ function Portfolio() {
           }
           live={"https://alexwittwer.github.io/simpleCalc/"}
           repo={"https://github.com/alexwittwer/simpleCalc/"}
+        />
+      </a>
+      <a
+        href="https://github.com/alexwittwer/cv-builder"
+        className="cursor-default"
+        target="blank"
+      >
+        <Card
+          imageURL={cvbuilder}
+          title={"CV Builder"}
+          desc={
+            "React-based CV builder with TailwindCSS, as part of The Odin Project"
+          }
+          live={"https://cv-builder-nine-henna.vercel.app/"}
+          repo={"https://github.com/alexwittwer/cv-builder/"}
         />
       </a>
       <a
@@ -143,21 +159,6 @@ function Portfolio() {
           }
           live={"https://alexwittwer.github.io/admin-dashboard/"}
           repo={"https://github.com/alexwittwer/admin-dashboard/"}
-        />
-      </a>
-      <a
-        href="https://github.com/alexwittwer/ToDoer"
-        className="cursor-default"
-        target="blank"
-      >
-        <Card
-          imageURL={todo}
-          title={"ToDoer"}
-          desc={
-            "Classic CS assignment, To Do list, as part of The Odin Project"
-          }
-          live={"https://alexwittwer.github.io/ToDoer/"}
-          repo={"https://github.com/alexwittwer/ToDoer/"}
         />
       </a>
       <a
