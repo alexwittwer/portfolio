@@ -61,7 +61,6 @@ export default function Nav() {
   return (
     <NavBar>
       <ul className="flex gap-1 text-sm ">
-        <MenuItem itemName={"Tech"} />
         <MenuItem itemName={"Projects"} />
         <MenuItem itemName={"Photos"} />
         <MenuItem itemName={"Contact"} />
