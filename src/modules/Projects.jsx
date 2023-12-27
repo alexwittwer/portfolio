@@ -1,15 +1,14 @@
 import { useInView } from "react-intersection-observer";
-import simplecalc from "../assets/simplecalc.png";
-import weatherify from "../assets/weatherify.png";
-import battleship from "../assets/battleship.png";
-import hardena from "../assets/hardena.png";
+import simplecalc from "../assets/simplecalc.jpg";
+import weatherify from "../assets/weatherify.jpg";
+import battleship from "../assets/battleship.jpg";
+import hardena from "../assets/hardena.jpg";
 import github from "../assets/github.svg";
 import external from "../assets/external.svg";
-import tictactoe from "../assets/tictactoe.png";
-import booknerd from "../assets/booknerd.png";
-import todo from "../assets/todo.png";
-import dashboard from "../assets/dashboard.png";
-import cvbuilder from "../assets/cv-builder.png";
+import tictactoe from "../assets/tictactoe.jpg";
+import booknerd from "../assets/booknerd.jpg";
+import dashboard from "../assets/dashboard.jpg";
+import cvbuilder from "../assets/cv-builder.jpg";
 
 function Title() {
   const { ref: projRef, inView: projInView } = useInView({
