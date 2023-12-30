@@ -80,7 +80,7 @@ function Portfolio() {
           imageURL={pokememory}
           title={"Pokemon Memory Card"}
           desc={
-            "A flashcard memory game with Pokemon, built with React and TailwindCSS, as part of The Odin Project"
+            "A flashcard memory game with Pokemon, built with React and TailwindCSS."
           }
           live={"https://memory-card-peach.vercel.app/"}
           repo={"https://github.com/alexwittwer/memory-card/"}
