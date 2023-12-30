@@ -9,6 +9,7 @@ import tictactoe from "../assets/tictactoe.jpg";
 import booknerd from "../assets/booknerd.jpg";
 import dashboard from "../assets/dashboard.jpg";
 import cvbuilder from "../assets/cv-builder.jpg";
+import pokememory from "../assets/pokememory.png";
 
 function Title() {
   const { ref: projRef, inView: projInView } = useInView({
@@ -70,6 +71,21 @@ function Portfolio() {
       id="Projects"
       className="portfolio flex flex-col text-slate-900 gap-2 items-center my-10"
     >
+      <a
+        href="https://github.com/alexwittwer/pokememory/"
+        className="cursor-default"
+        target="blank"
+      >
+        <Card
+          imageURL={pokememory}
+          title={"Pokemon Memory Card"}
+          desc={
+            "A flashcard memory game with Pokemon, built with React and TailwindCSS, as part of The Odin Project"
+          }
+          live={"https://memory-card-peach.vercel.app/"}
+          repo={"https://github.com/alexwittwer/memory-card/"}
+        />
+      </a>
       <a
         href="https://github.com/alexwittwer/simpleCalc/"
         className="cursor-default"
