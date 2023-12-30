@@ -72,7 +72,7 @@ function Portfolio() {
       className="portfolio flex flex-col text-slate-900 gap-2 items-center my-10"
     >
       <a
-        href="https://github.com/alexwittwer/pokememory/"
+        href="https://github.com/alexwittwer/memory-card/"
         className="cursor-default"
         target="blank"
       >
