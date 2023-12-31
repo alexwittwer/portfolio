@@ -244,8 +244,8 @@ function Portfolio() {
           desc={
             "My first website and a reminder of where I came from. Part of The Odin Project"
           }
-          live={"https://alexwittwer.github.io/odinrecipes/"}
-          repo={"https://github.com/alexwittwer/odinrecipes/"}
+          live={"https://alexwittwer.github.io/odin-recipes/"}
+          repo={"https://github.com/alexwittwer/odin-recipes/"}
         />
       </a>
     </section>
