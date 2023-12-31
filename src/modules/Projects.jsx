@@ -10,6 +10,9 @@ import booknerd from "../assets/booknerd.jpg";
 import dashboard from "../assets/dashboard.jpg";
 import cvbuilder from "../assets/cv-builder.jpg";
 import pokememory from "../assets/pokememory.png";
+import etchasketch from "../assets/etchasketch.jpg";
+import todoer from "../assets/todoer.jpeg";
+import odinrecipes from "../assets/odinrecipes.jpeg";
 
 function Title() {
   const { ref: projRef, inView: projInView } = useInView({
@@ -202,6 +205,47 @@ function Portfolio() {
           desc={"Library tracking app, as part of The Odin Project"}
           live={"https://alexwittwer.github.io/BookNerd/"}
           repo={"https://github.com/alexwittwer/BookNerd/"}
+        />
+      </a>
+      <a
+        href="https://github.com/alexwittwer/etch-a-sketch"
+        className="cursor-default"
+        target="blank"
+      >
+        <Card
+          imageURL={etchasketch}
+          title={"Etch-a-Sketch"}
+          desc={"Pixel etch-a-sketch, as part of The Odin Project"}
+          live={"https://alexwittwer.github.io/etch-a-sketch/"}
+          repo={"https://github.com/alexwittwer/etch-a-sketch/"}
+        />
+      </a>
+      <a
+        href="https://github.com/alexwittwer/ToDoer"
+        className="cursor-default"
+        target="blank"
+      >
+        <Card
+          imageURL={todoer}
+          title={"ToDoer"}
+          desc={"Classic To Do list project, as part of The Odin Project"}
+          live={"https://alexwittwer.github.io/ToDoer/"}
+          repo={"https://github.com/alexwittwer/ToDoer/"}
+        />
+      </a>
+      <a
+        href="https://github.com/alexwittwer/odinrecipes"
+        className="cursor-default"
+        target="blank"
+      >
+        <Card
+          imageURL={odinrecipes}
+          title={"Odin Recipes"}
+          desc={
+            "My first website and a reminder of where I came from. Part of The Odin Project"
+          }
+          live={"https://alexwittwer.github.io/odinrecipes/"}
+          repo={"https://github.com/alexwittwer/odinrecipes/"}
         />
       </a>
     </section>
