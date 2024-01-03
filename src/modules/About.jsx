@@ -11,14 +11,18 @@ function About() {
     <>
       <section
         id="About"
-        className="text-white flex gap-2 flex-col justify-center items-center h-screen about"
+        className="text-white flex flex-col justify-center items-center h-screen about"
       >
-        <h1
-          ref={ref}
-          className={`text-5xl font-bold ${inView ? "fade-in" : ""}`}
-        >
-          Hi, I'm Alex
-        </h1>
+        <div className="inline-block">
+          <h1
+            ref={ref}
+            className={` text-5xl font-bold ${
+              inView ? "text-animate-type" : ""
+            }`}
+          >
+            Hi, I'm Alex Wittwer
+          </h1>
+        </div>
       </section>
     </>
   );

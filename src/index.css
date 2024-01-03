@@ -53,6 +53,16 @@ nav {
   animation: 1s fade-in;
 }
 
+.text-animate-type {
+  letter-spacing: 10px;
+  border-right: 5px solid white;
+  width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  animation: typing 1s steps(19), curs 0.4s step-end infinite alternate,
+    hide-text 2s step-end;
+}
+
 /* ------------- animations ------------- */
 /* clicked */
 .burger-bar.clicked:nth-child(1) {
@@ -165,6 +175,12 @@ li:hover {
   transform: scale(1.2);
 }
 
+@keyframes hide-text {
+  to {
+    opacity: 0;
+  }
+}
+
 @keyframes fade-in {
   from {
     opacity: 0;
@@ -207,6 +223,18 @@ li:hover {
   }
   to {
     transform: translateY(0%);
+  }
+}
+
+@keyframes curs {
+  50% {
+    border-color: transparent;
+  }
+}
+
+@keyframes typing {
+  from {
+    width: 0;
   }
 }
 
