@@ -1,4 +1,5 @@
 import { useInView } from "react-intersection-observer";
+import PropTypes from "prop-types";
 import photo1 from "../assets/photo1.webp";
 import photo2 from "../assets/photo2.webp";
 import photo3 from "../assets/photo3.webp";
@@ -48,7 +49,7 @@ function PhotoWrapper({ children }) {
   );
 }
 
-function Gallery({ children }) {
+function Gallery() {
   return (
     <section
       id="Photos"
@@ -172,3 +173,7 @@ export default function Photos() {
     </>
   );
 }
+
+PhotoWrapper.propTypes = {
+  children: PropTypes.element.isRequired,
+};

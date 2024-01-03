@@ -1,4 +1,6 @@
+/* eslint-disable react/no-unescaped-entities */
 import { useInView } from "react-intersection-observer";
+import PropTypes from "prop-types";
 import simplecalc from "../assets/simplecalc.jpg";
 import weatherify from "../assets/weatherify.jpg";
 import battleship from "../assets/battleship.jpg";
@@ -260,3 +262,11 @@ export default function Projects() {
     </>
   );
 }
+
+Card.propTypes = {
+  imageURL: PropTypes.any,
+  title: PropTypes.string,
+  live: PropTypes.string,
+  repo: PropTypes.string,
+  desc: PropTypes.string,
+};

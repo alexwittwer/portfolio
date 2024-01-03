@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import PropTypes from "prop-types";
 
 const MenuItem = ({ itemName }) => {
   const [anchorTarget, setAnchorTarget] = useState(null);
@@ -68,3 +69,11 @@ export default function Nav() {
     </NavBar>
   );
 }
+
+MenuItem.propTypes = {
+  itemName: PropTypes.string,
+};
+
+NavBar.propTypes = {
+  children: PropTypes.element.isRequired,
+};
