@@ -11,7 +11,7 @@ export default function Socials() {
   });
 
   return (
-    <section id = "Contact" className="h-screen">
+    <section id="Contact" className="h-screen">
       <div
         ref={socRef}
         className={` ${
@@ -19,8 +19,15 @@ export default function Socials() {
         } h-screen flex flex-col justify-center text-center items-center text-slate-100 text-xl gap-5`}
       >
         <h2 ref={socRef} className={`${socInView ? "slide-in-top" : ""}`}>
-          You can reach me or find more of my work at any of the following
-          links.{" "}
+          You can download my resume{" "}
+          <a
+            className="underline"
+            href="src/assets/alex-wittwer-resume.pdf"
+            download
+          >
+            here
+          </a>{" "}
+          and find more of my work at any of the following links.{" "}
         </h2>
         <div className="flex justify-center items-center gap-5 p-5 socials">
           <a href="https://www.linkedin.com/in/alex-wittwer/">
@@ -37,7 +44,7 @@ export default function Socials() {
           </a>
         </div>
         <h3 ref={socRef} className={`${socInView ? "slide-in-bottom" : ""}`}>
-          Or{" "}
+          ...Or{" "}
           <a href="mailto: wittweral+portfolio@gmail.com" className="underline">
             just send me an email.
           </a>
