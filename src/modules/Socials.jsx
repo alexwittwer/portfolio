@@ -3,6 +3,7 @@ import linkedin from "../assets/linkedin.svg";
 import github from "../assets/github_white.svg";
 import instagram from "../assets/instagram.svg";
 import twotwoslides from "../assets/22slides.png";
+import resume from "../assets/alex-wittwer-resume.pdf";
 
 export default function Socials() {
   const { ref: socRef, inView: socInView } = useInView({
@@ -20,11 +21,7 @@ export default function Socials() {
       >
         <h2 ref={socRef} className={`${socInView ? "slide-in-top" : ""}`}>
           You can download my resume{" "}
-          <a
-            className="underline"
-            href="src/assets/alex-wittwer-resume.pdf"
-            download
-          >
+          <a className="underline" href={resume} download>
             here
           </a>{" "}
           and find more of my work at any of the following links.{" "}
