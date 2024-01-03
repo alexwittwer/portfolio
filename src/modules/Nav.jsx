@@ -40,7 +40,7 @@ function NavBar({ children }) {
   };
 
   return (
-    <div className="flex items-center">
+    <div className="nav-bar flex items-center">
       <nav>
         <button className="burger-menu" onClick={updateMenu} aria-label="nav">
           <div className={burger_class}></div>
@@ -60,7 +60,7 @@ function NavBar({ children }) {
 export default function Nav() {
   return (
     <NavBar>
-      <ul className="flex gap-1 text-sm ">
+      <ul className="flex gap-0 text-xs ">
         <MenuItem itemName={"Projects"} />
         <MenuItem itemName={"Photos"} />
         <MenuItem itemName={"Contact"} />

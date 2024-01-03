@@ -12,7 +12,9 @@ export default function Tech() {
         id="Tech"
         className={`h-screen text-lg flex flex-col items-center justify-center text-white`}
       >
-        <h2 className="my-4">Here are some of the things I use: </h2>
+        <h2 className="my-4 text-center">
+          Here are some of the things I use:{" "}
+        </h2>
         <div className=" w-fit relative">
           <div
             ref={techRef}

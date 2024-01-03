@@ -54,13 +54,12 @@ nav {
 }
 
 .text-animate-type {
-  letter-spacing: 10px;
+  font-size: 1.6em;
   border-right: 5px solid white;
   width: 100%;
   white-space: nowrap;
   overflow: hidden;
-  animation: typing 1s steps(19), curs 0.4s step-end infinite alternate,
-    hide-text 2s step-end;
+  animation: typing 1s steps(19), curs 0.4s step-end infinite alternate;
 }
 
 /* ------------- animations ------------- */
@@ -239,6 +238,11 @@ li:hover {
 }
 
 @media screen and (min-width: 600px) {
+  .text-animate-type {
+    font-size: 3rem;
+    line-height: 1;
+  }
+
   .portfolio {
     margin-inline: 10%;
     display: grid;
