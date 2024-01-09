@@ -15,6 +15,7 @@ import pokememory from "../assets/pokememory.png";
 import etchasketch from "../assets/etchasketch.jpg";
 import todoer from "../assets/todoer.jpeg";
 import odinrecipes from "../assets/odinrecipes.jpeg";
+import ggio from "../assets/ggio.jpeg";
 
 function Title() {
   const { ref: projRef, inView: projInView } = useInView({
@@ -76,6 +77,21 @@ function Portfolio() {
       id="Projects"
       className="portfolio flex flex-col text-slate-900 gap-2 items-center my-10"
     >
+      <a
+        href="https://github.com/alexwittwer/shopping-cart/"
+        className="cursor-default"
+        target="blank"
+      >
+        <Card
+          imageURL={ggio}
+          title={"GG.io Shop"}
+          desc={
+            "A multi-routed video-game webstore, built with React and TailwindCSS."
+          }
+          live={"https://shopping-cart-alpha-blush.vercel.app/"}
+          repo={"https://github.com/alexwittwer/shopping-cart/"}
+        />
+      </a>
       <a
         href="https://github.com/alexwittwer/memory-card/"
         className="cursor-default"
