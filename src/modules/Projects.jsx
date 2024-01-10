@@ -88,7 +88,7 @@ function Portfolio() {
           desc={
             "A multi-routed video-game webstore, built with React and TailwindCSS."
           }
-          live={"https://shopping-cart-alpha-blush.vercel.app/"}
+          live={"https://ggio.vercel.app/"}
           repo={"https://github.com/alexwittwer/shopping-cart/"}
         />
       </a>
