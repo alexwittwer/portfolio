@@ -15,7 +15,7 @@ import pokememory from "../assets/pokememory.png";
 import etchasketch from "../assets/etchasketch.jpg";
 import todoer from "../assets/todoer.jpeg";
 import odinrecipes from "../assets/odinrecipes.jpeg";
-import ggio from "../assets/ggio.jpeg";
+import ggio from "../assets/ggio.webp";
 
 function Title() {
   const { ref: projRef, inView: projInView } = useInView({
