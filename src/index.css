@@ -8,7 +8,7 @@
 }
 
 body {
-  background-color: darkslategrey;
+  background-color: rgb(18, 26, 29);
 }
 
 /* ---------------- Navbar and burger menu ------------------ */
@@ -105,6 +105,10 @@ li:hover {
 
 .fade-in {
   animation: 1s fade-in ease-in;
+}
+
+.fade-in-long {
+  animation: 3s fade-in ease-in;
 }
 
 .slide-in-right {
