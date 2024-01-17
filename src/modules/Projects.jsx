@@ -51,7 +51,7 @@ function Card({ imageURL, title, desc, repo, live }) {
     >
       <img
         src={imageURL}
-        alt={desc}
+        alt=""
         className="object-cover portfolio-image"
         width={"500px"}
       />
