@@ -60,10 +60,10 @@ function Card({ imageURL, title, desc, repo, live }) {
         <p className="text-slate-900">{desc}</p>{" "}
         <div className="links">
           <a target="blank" href={repo}>
-            <img className="icon" src={github} alt="" width={"20px"} />
+            <img className="icon" src={github} alt="github icon" width={"20px"} />
           </a>
           <a target="blank" href={live}>
-            <img className="icon" src={external} alt="" width={"20px"} />
+            <img className="icon" src={external} alt="external link icon" width={"20px"} />
           </a>
         </div>
       </div>
