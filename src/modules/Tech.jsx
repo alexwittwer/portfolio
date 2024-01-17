@@ -53,6 +53,11 @@ export default function Tech() {
                   alt=""
                   width="50px"
                 />
+                <img
+                  src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/C_Programming_Language.svg/695px-C_Programming_Language.svg.png"
+                  alt=""
+                  width="50px"
+                />
               </div>
             </div>
           </div>
@@ -63,7 +68,7 @@ export default function Tech() {
             }`}
           >
             <div className="text-center text-slate-900">
-              <h3>Frameworks</h3>
+              <h3>Frameworks & Databases</h3>
               <div
                 ref={innerRef}
                 className={`flex ${
@@ -84,6 +89,11 @@ export default function Tech() {
                 />
                 <img
                   src="https://ajeetchaulagain.com/static/7cb4af597964b0911fe71cb2f8148d64/8d565/express-js.webp"
+                  alt=""
+                  width="50px"
+                />
+                <img
+                  src="https://www.svgrepo.com/show/331488/mongodb.svg"
                   alt=""
                   width="50px"
                 />
