@@ -16,6 +16,7 @@ import etchasketch from "../assets/etchasketch.jpg";
 import todoer from "../assets/todoer.jpeg";
 import odinrecipes from "../assets/odinrecipes.jpeg";
 import ggio from "../assets/ggio.webp";
+import blueboard from "../assets/blueboard.webp";
 
 function Title() {
   const { ref: projRef, inView: projInView } = useInView({
@@ -45,7 +46,7 @@ function Card({ imageURL, title, desc, repo, live }) {
   return (
     <div
       ref={projRef}
-      className={`card bg-slate-100 rounded-md my-2 items-center justify-center ${
+      className={`card bg-slate-100 rounded-md hover:outline-5 hover:outline hover:outline-cyan-400 my-2 items-center justify-center ${
         projInView ? "fade-in" : ""
       }`}
     >
@@ -59,11 +60,19 @@ function Card({ imageURL, title, desc, repo, live }) {
         <h3 className="text-base items-center">{title}</h3>
         <p className="text-slate-900">{desc}</p>{" "}
         <div className="links">
-          <a target="blank" href={repo}>
-            <img className="icon" src={github} alt="github icon" width={"20px"} />
+          <a
+            className="p-3 text-md lg:text-lg bg-slate-800 text-slate-50 rounded-md hover:scale-105 transition-all"
+            target="blank"
+            href={repo}
+          >
+            Code
           </a>
-          <a target="blank" href={live}>
-            <img className="icon" src={external} alt="external link icon" width={"20px"} />
+          <a
+            className="p-3 text-md lg:text-lg bg-slate-800 text-slate-50 rounded-md hover:scale-105 transition-all"
+            target="blank"
+            href={live}
+          >
+            Live
           </a>
         </div>
       </div>
@@ -135,6 +144,21 @@ function Portfolio() {
           }
           live={"https://cv-builder-nine-henna.vercel.app/"}
           repo={"https://github.com/alexwittwer/cv-builder/"}
+        />
+      </a>
+      <a
+        href="https://github.com/alexwittwer/mini-message-board/"
+        className="cursor-default"
+        target="blank"
+      >
+        <Card
+          imageURL={blueboard}
+          title={"BlueBoard"}
+          desc={
+            "A mini-message board built with Express, Mongoose, MongoDB, pug and SASS, as part of The Odin Project"
+          }
+          live={"https://blue-board.up.railway.app/"}
+          repo={"https://github.com/alexwittwer/mini-message-board/"}
         />
       </a>
       <a

@@ -160,11 +160,6 @@ li:hover {
 
 .card {
   margin: 16px;
-  transition: 250ms;
-}
-
-.card:hover {
-  transform: scale(1.05);
 }
 
 .icon {
