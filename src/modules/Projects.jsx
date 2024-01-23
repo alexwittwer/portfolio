@@ -24,7 +24,7 @@ function Title() {
     rootMargin: "300px",
   });
   return (
-    <section className="flex flex-col justify-center items-center h-screen">
+    <section className="flex tech-lines flex-col justify-center items-center h-screen">
       <p
         ref={projRef}
         className={`text-slate-100 text-lg text-center ${

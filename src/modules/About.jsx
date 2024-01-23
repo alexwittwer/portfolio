@@ -11,7 +11,7 @@ function About() {
     <>
       <section
         id="About"
-        className="text-white flex flex-col justify-center items-center h-screen about"
+        className="bio text-white flex flex-col justify-center items-center h-screen about"
       >
         <div className="inline-block">
           <h1

@@ -15,7 +15,7 @@ export default function Tech() {
     <>
       <section
         id="Tech"
-        className={`h-screen text-lg flex flex-col items-center justify-center text-white`}
+        className={`h-screen text-lg flex flex-col items-center justify-center tech-lines text-white`}
       >
         <h2 className="my-4 text-center">
           Here are some of the things I use:{" "}
