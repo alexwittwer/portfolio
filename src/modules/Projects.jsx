@@ -17,6 +17,7 @@ import todoer from "../assets/todoer.jpeg";
 import odinrecipes from "../assets/odinrecipes.jpeg";
 import ggio from "../assets/ggio.webp";
 import blueboard from "../assets/blueboard.webp";
+import inventory from "../assets/inventory.webp";
 
 function Title() {
   const { ref: projRef, inView: projInView } = useInView({
@@ -86,6 +87,36 @@ function Portfolio() {
       id="Projects"
       className="portfolio flex flex-col text-slate-900 gap-2 items-center my-10"
     >
+      <a
+        href="https://github.com/alexwittwer/shopping-cart/"
+        className="cursor-default"
+        target="blank"
+      >
+        <Card
+          imageURL={ggio}
+          title={"GG.io Shop"}
+          desc={
+            "A multi-routed video-game webstore, built with React and TailwindCSS."
+          }
+          live={"https://ggio.vercel.app/"}
+          repo={"https://github.com/alexwittwer/shopping-cart/"}
+        />
+      </a>
+      <a
+        href="https://biamp-inventory-proto.up.railway.app/"
+        className="cursor-default"
+        target="blank"
+      >
+        <Card
+          imageURL={inventory}
+          title={"Biamp Inventory CMS"}
+          desc={
+            "An inventory CRUD app with Biamp products as placeholders, as part of The Odin Project"
+          }
+          live={"https://biamp-inventory-proto.up.railway.app/"}
+          repo={"https://github.com/alexwittwer/non-conformance-crud"}
+        />
+      </a>
       <a
         href="https://github.com/alexwittwer/shopping-cart/"
         className="cursor-default"
