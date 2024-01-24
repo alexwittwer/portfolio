@@ -118,21 +118,6 @@ function Portfolio() {
         />
       </a>
       <a
-        href="https://github.com/alexwittwer/shopping-cart/"
-        className="cursor-default"
-        target="blank"
-      >
-        <Card
-          imageURL={ggio}
-          title={"GG.io Shop"}
-          desc={
-            "A multi-routed video-game webstore, built with React and TailwindCSS."
-          }
-          live={"https://ggio.vercel.app/"}
-          repo={"https://github.com/alexwittwer/shopping-cart/"}
-        />
-      </a>
-      <a
         href="https://github.com/alexwittwer/memory-card/"
         className="cursor-default"
         target="blank"
