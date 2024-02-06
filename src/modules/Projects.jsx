@@ -18,6 +18,7 @@ import odinrecipes from "../assets/odinrecipes.jpeg";
 import ggio from "../assets/ggio.webp";
 import blueboard from "../assets/blueboard.webp";
 import inventory from "../assets/inventory.webp";
+import crumbum from "../assets/crumbum.webp";
 
 function Title() {
   const { ref: projRef, inView: projInView } = useInView({
@@ -87,6 +88,21 @@ function Portfolio() {
       id="Projects"
       className="portfolio flex flex-col text-slate-900 gap-2 items-center my-10"
     >
+      <a
+        href="https://github.com/alexwittwer/blog-api/"
+        className="cursor-default"
+        target="blank"
+      >
+        <Card
+          imageURL={crumbum}
+          title={"crumbum"}
+          desc={
+            "A full stack blog built with MongoDB, React, Express, Node.js, TailwindCSS, daisyUI and various other tools as part of The Odin Project"
+          }
+          live={"https://www.crumbum.club/"}
+          repo={"https://github.com/alexwittwer/blog-api/"}
+        />
+      </a>
       <a
         href="https://github.com/alexwittwer/shopping-cart/"
         className="cursor-default"
