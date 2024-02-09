@@ -2,7 +2,15 @@ import { useInView } from "react-intersection-observer";
 import Marquee from "react-fast-marquee";
 
 export default function Tech() {
-  const { ref: techRef, inView: techInView } = useInView({
+  const { ref: techRef1, inView: techInView1 } = useInView({
+    threshold: 0,
+    rootMargin: "600px",
+  });
+    const { ref: techRef2, inView: techInView2 } = useInView({
+    threshold: 0,
+    rootMargin: "600px",
+  });
+    const { ref: techRef3, inView: techInView3 } = useInView({
     threshold: 0,
     rootMargin: "600px",
   });
@@ -22,9 +30,9 @@ export default function Tech() {
         </h2>
         <div className=" w-fit relative">
           <div
-            ref={techRef}
+            ref={techRef1}
             className={`flex relative justify-center bg-slate-100 p-5 my-10 rounded-md ${
-              techInView ? "slide-in-bottom" : ""
+              techInView1 ? "slide-in-bottom" : ""
             }`}
           >
             <div className="text-center text-slate-900">
@@ -62,9 +70,9 @@ export default function Tech() {
             </div>
           </div>
           <div
-            ref={techRef}
+            ref={techRef2}
             className={`flex relative justify-center bg-slate-100 p-5 my-10 rounded-md  ${
-              techInView ? "slide-in-bottom" : ""
+              techInView2 ? "slide-in-bottom" : ""
             }`}
           >
             <div className="text-center text-slate-900">
@@ -101,9 +109,9 @@ export default function Tech() {
             </div>
           </div>
           <div
-            ref={techRef}
+            ref={techRef3}
             className={`flex relative justify-center bg-slate-100 p-5 my-10 rounded-md ${
-              techInView ? "slide-in-bottom" : ""
+              techInView3 ? "slide-in-bottom" : ""
             }`}
           >
             <div className="text-center text-slate-900">
