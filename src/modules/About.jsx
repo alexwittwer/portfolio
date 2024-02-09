@@ -24,6 +24,7 @@ function About() {
           </h1>
         </div>
       </section>
+      <div className="p-44"></div>
     </>
   );
 }

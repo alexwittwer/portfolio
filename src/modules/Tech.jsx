@@ -6,15 +6,23 @@ export default function Tech() {
     threshold: 0,
     rootMargin: "600px",
   });
-    const { ref: techRef2, inView: techInView2 } = useInView({
+  const { ref: techRef2, inView: techInView2 } = useInView({
     threshold: 0,
     rootMargin: "600px",
   });
-    const { ref: techRef3, inView: techInView3 } = useInView({
+  const { ref: techRef3, inView: techInView3 } = useInView({
     threshold: 0,
     rootMargin: "600px",
   });
-  const { ref: innerRef, inView: innerRefView } = useInView({
+  const { ref: innerRef1, inView: innerRefView1 } = useInView({
+    threshold: 0,
+    rootMargin: "600px",
+  });
+  const { ref: innerRef2, inView: innerRefView2 } = useInView({
+    threshold: 0,
+    rootMargin: "600px",
+  });
+  const { ref: innerRef3, inView: innerRefView3 } = useInView({
     threshold: 0,
     rootMargin: "600px",
   });
@@ -25,22 +33,24 @@ export default function Tech() {
         id="Tech"
         className={`h-screen text-lg flex flex-col items-center justify-center tech-lines text-white`}
       >
-        <h2 className="my-4 text-center">
-          Here are some of the things I use:{" "}
-        </h2>
-        <div className=" w-fit relative">
+        <div className="my-40">
+          <h2 className="my-4 text-2xl text-center">
+            Here are some of the things I use:{" "}
+          </h2>
+        </div>
+        <div className=" max-w-3/4 relative flex flex-col gap-10">
           <div
             ref={techRef1}
-            className={`flex relative justify-center bg-slate-100 p-5 my-10 rounded-md ${
+            className={`flex relative justify-center bg-slate-100 p-5 rounded-md ${
               techInView1 ? "slide-in-bottom" : ""
             }`}
           >
             <div className="text-center text-slate-900">
               <h3>Languages</h3>
               <div
-                ref={innerRef}
+                ref={innerRef1}
                 className={`flex ${
-                  innerRefView && "fade-in"
+                  innerRefView1 && "fade-in"
                 } flex-wrap justify-center gap-5`}
               >
                 <img
@@ -71,16 +81,16 @@ export default function Tech() {
           </div>
           <div
             ref={techRef2}
-            className={`flex relative justify-center bg-slate-100 p-5 my-10 rounded-md  ${
+            className={`flex relative justify-center bg-slate-100 p-5 rounded-md  ${
               techInView2 ? "slide-in-bottom" : ""
             }`}
           >
             <div className="text-center text-slate-900">
               <h3>Frameworks & Databases</h3>
               <div
-                ref={innerRef}
+                ref={innerRef2}
                 className={`flex ${
-                  innerRefView && "fade-in"
+                  innerRefView2 && "fade-in"
                 } flex-wrap justify-center gap-5`}
               >
                 <img
@@ -110,16 +120,16 @@ export default function Tech() {
           </div>
           <div
             ref={techRef3}
-            className={`flex relative justify-center bg-slate-100 p-5 my-10 rounded-md ${
+            className={`flex relative justify-center bg-slate-100 p-5 rounded-md ${
               techInView3 ? "slide-in-bottom" : ""
             }`}
           >
             <div className="text-center text-slate-900">
               <h3>Tools</h3>
               <div
-                ref={innerRef}
+                ref={innerRef3}
                 className={`flex ${
-                  innerRefView && "fade-in"
+                  innerRefView3 && "fade-in"
                 } flex-wrap justify-center gap-5`}
               >
                 <img
