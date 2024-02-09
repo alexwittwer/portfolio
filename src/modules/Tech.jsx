@@ -23,8 +23,8 @@ export default function Tech() {
         <div className=" w-fit relative">
           <div
             ref={techRef}
-            className={`flex relative justify-center bg-slate-100 p-5 my-5 rounded-md ${
-              techInView ? "slide-in-right" : ""
+            className={`flex relative justify-center bg-slate-100 p-5 my-10 rounded-md ${
+              techInView ? "slide-in-bottom" : ""
             }`}
           >
             <div className="text-center text-slate-900">
@@ -63,8 +63,8 @@ export default function Tech() {
           </div>
           <div
             ref={techRef}
-            className={`flex relative justify-center bg-slate-100 p-5 my-5 rounded-md  ${
-              techInView ? "slide-in-left" : ""
+            className={`flex relative justify-center bg-slate-100 p-5 my-10 rounded-md  ${
+              techInView ? "slide-in-bottom" : ""
             }`}
           >
             <div className="text-center text-slate-900">
@@ -102,8 +102,8 @@ export default function Tech() {
           </div>
           <div
             ref={techRef}
-            className={`flex relative justify-center bg-slate-100 p-5 my-5 rounded-md ${
-              techInView ? "slide-in-right" : ""
+            className={`flex relative justify-center bg-slate-100 p-5 my-10 rounded-md ${
+              techInView ? "slide-in-bottom" : ""
             }`}
           >
             <div className="text-center text-slate-900">
