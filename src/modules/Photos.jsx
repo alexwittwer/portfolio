@@ -24,7 +24,7 @@ function Intro() {
         inView ? "fade-in" : ""
       }`}
     >
-      <h2 className="text-slate-100 text-xl text-center">
+      <h2 className="text-slate-100 text-2xl text-center">
         ...I am also an award winning photojournalist
       </h2>
     </section>
