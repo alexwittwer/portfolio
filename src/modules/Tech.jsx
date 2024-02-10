@@ -41,12 +41,12 @@ export default function Tech() {
         <div className=" max-w-3/4 relative flex flex-col gap-10">
           <div
             ref={techRef1}
-            className={`flex relative justify-center bg-slate-100 p-5 rounded-md ${
+            className={`flex backdrop-blur-lg border-slate-50 border-2 relative bg-slate-50 bg-opacity-30 justify-center p-5 rounded-md ${
               techInView1 ? "slide-in-bottom" : ""
             }`}
           >
             <div className="text-center text-slate-900">
-              <h3>Languages</h3>
+              <h3 className="text-slate-50">Languages</h3>
               <div
                 ref={innerRef1}
                 className={`flex ${
@@ -81,12 +81,12 @@ export default function Tech() {
           </div>
           <div
             ref={techRef2}
-            className={`flex relative justify-center bg-slate-100 p-5 rounded-md  ${
+            className={`flex backdrop-blur-lg border-slate-50 border-2 relative bg-slate-50 bg-opacity-30 justify-center p-5 rounded-md  ${
               techInView2 ? "slide-in-bottom" : ""
             }`}
           >
             <div className="text-center text-slate-900">
-              <h3>Frameworks & Databases</h3>
+              <h3 className="text-slate-50">Frameworks & Databases</h3>
               <div
                 ref={innerRef2}
                 className={`flex ${
@@ -120,12 +120,12 @@ export default function Tech() {
           </div>
           <div
             ref={techRef3}
-            className={`flex relative justify-center bg-slate-100 p-5 rounded-md ${
+            className={`flex backdrop-blur-lg border-slate-50 border-2 relative bg-slate-50 bg-opacity-30 justify-center p-5 rounded-md ${
               techInView3 ? "slide-in-bottom" : ""
             }`}
           >
             <div className="text-center text-slate-900">
-              <h3>Tools</h3>
+              <h3 className="text-slate-50">Tools</h3>
               <div
                 ref={innerRef3}
                 className={`flex ${

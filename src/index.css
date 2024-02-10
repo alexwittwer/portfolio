@@ -8,7 +8,8 @@
 }
 
 body {
-  background-color: rgb(18, 26, 29);
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' width='1920' height='927' preserveAspectRatio='xMidYMid' viewBox='0 0 1920 927' style='z-index:1;margin-right:-2px;display:block;background-color:rgb(241, 242, 243);' %3E%3Cg transform='translate(960,463.5) scale(1,1) translate(-960,-463.5)' style='transform:matrix(1, 0, 0, 1, 0, 0);' %3E%3ClinearGradient id='ldbk-ynhhezt3hqc' x1='-0.1' y1='0' x2='1.1' y2='-0.6399999856948853'%3E%3Cstop stop-color='%23191d3a' offset='0' %3E%3C/stop%3E%3Cstop stop-color='%233b4368' offset='1' %3E%3C/stop%3E%3C/linearGradient%3E%3Crect x='0' y='0' width='1920' height='927' fill='url(%23ldbk-ynhhezt3hqc)' %3E%3C/rect%3E%3C/g%3E%3C/svg%3E");
+  background-attachment: fixed;
 }
 
 /* ---------------- Navbar and burger menu ------------------ */
@@ -159,13 +160,11 @@ li:hover {
 }
 
 .bio {
-  
   background-size: cover;
 }
 
 .tech-lines {
   background-size: contain;
-  
 }
 
 .card {
